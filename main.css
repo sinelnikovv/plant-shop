@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1180px;
+    }
+  }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 5px;
+    margin-top: 40px;
+}
+
+.z{
+    z-index: 999;
+}
+
+footer{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.icons{
+    width: 80px;
+}
+
+.sign-up{
+    color: #156963;
+    padding: 8px 30px;
+}
+
+.sign-in{
+    color: #fff;
+    background-color:#156963 ;
+    padding: 8px 30px;
+}
+
+.sign-up a{
+    color: #156963;
+}
+
+.sign-in a{
+    color: #fff;
+    background-color:#156963 ;
+}
+
+.header-left{
+    max-width: 560px;
+}
+
+.header-right{
+   
+    max-width: 525px;
+    margin-top: 190px;
+}
+
+.header-right p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #2C1500;
+    opacity: 0.8;
+
+}
+
+h2{    
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 83px;
+    color: #156963;
+    
+    
+}
+
+main{
+    position: relative;
+    top: -76px;
+}
