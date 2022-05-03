@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$font: 'Montserrat', sans-serif;
+$font-secondary: 'Nunito', sans-serif;
+$primary-color: #156963;
+$primary-color-hover: #0D403C;
+$text-color: #2C1500;
+$bg-color: #fff;
+$nav-btn-color:#000;
+
+*{
+    font-family: $font;
+}
+
+html{
+    font-size: 14px;
+    @media screen and (min-width:992px){
+        font-size: 18px;
+    }
+    
+}
+
+.container{
+    max-width: 1168px;
+}
+
+.btn{
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 0;
+
+    &:focus{
+        outline: 0;
+        box-shadow: none;       
+    }
+
+    &__padding{
+        padding: 8px 30px;
+    }
+
+    &__text{
+        color: $primary-color;
+    }
+
+    &__bg{
+        background: $primary-color;
+        color: $bg-color;
+    }
+
+    &__icon{
+        color: $nav-btn-color;
+    }
+
+    &__hover{
+        &:hover{
+            background: $primary-color-hover;
+            color: $bg-color;
+        }
+    }
+}
+
+.fa-bars{
+    color: $primary-color;
+}
+
+.fa-magnifying-glass{
+    @media screen and (min-width:992px){
+        margin-right: 2.5rem;    
+    }
+}
+
+.fa-cart-shopping{
+    margin-right: 0;
+    @media screen and (min-width:992px){
+        margin-right: 0.5rem;
+    }
+}
+
+.navbar{
+    top: 2.5rem;
+    z-index: 100;
+}
+
+.navbar-collapse{
+    position: absolute;
+    background-color: $bg-color;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 4rem;
+    padding: 1rem;
+    @media (min-width:576px) {
+        left: auto;
+        margin: auto;
+    }
+    @media (min-width:992px) {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+
+    }
+}
+
+nav{
+    .container{
+        padding: 0px .3rem;
+    }
+}
+
+.nav-item{
+    display: inline-block;
+    text-align: center;
+}
+
+header{
+    position: relative;
+    top: -76px;
+
+    .header-right p{
+        line-height: 1.75rem;
+        color: $text-color;
+        opacity: 0.8;
+    }
+    
+    .header-right h2{    
+        font-weight: 500;
+        font-size: 3.75rem;
+        color: $primary-color;
+    }
+
+}
+
+.carousel_buttons{
+    position: relative;
+    font-weight: 500;
+    @media (min-width: 992px) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+    }
+}
+
+
+.button_carousel{
+    border: none;
+    padding: 40px 8px 40px 40px;
+    @media (max-width: 1199.98px) { 
+        padding: 10px;
+    }
+
+    div{
+        font-size: 24px;
+        line-height: 29px;
+        @media (max-width: 991.98px){
+            font-size: 1.5rem;
+        }    
+    }
+}
+
+@media (max-width: 991.98px) {
+    .button_carousel p{
+        font-size: 1.5rem;
+    }
+}
+
+.button_carousel_prev div{
+    color: #333333;
+
+}
+
+.button_carousel_prev, .button_carousel_next{
+    font-size: 32px;
+    line-height: 39px; 
+}
+
+.button_carousel_prev{
+    color: $primary-color;
+    background: transparent;
+}
+
+.button_carousel_next{
+    background: $primary-color;
+    color: $bg-color;
+}
+
+.modal-dialog{
+    max-width: 700px;
+
+    .modal-content{
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .btnClose{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        opacity: .5;
+        transition: opacity .5s;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+
+.modal-image{
+    background: url("img/modal-image.png");
+    height: 500px;
+}
+
+.modal-pattern{
+    background: url("img/modal-pattern.png");
+    height: 500px;
+
+    .modal_header{
+        margin-bottom: 35px;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: $primary-color;
+
+        .modal-form{
+            width: 100%;
+            max-width: 300px;
+
+            .form-floating>.form-control, .form-floating>.form-select{
+                height: 50px;
+                padding: 12px 15px;
+                border: 1px solid #C4C4C4;
+                border-radius: 0;
+                font-size: 1rem;
+            }
+
+            .form-floating>label{
+                padding: 12px 15px;
+            }
+
+            .form-floating>.form-control:focus, .form-floating>.form-select:focus{
+                box-shadow: none;
+                outline: 0;
+                border-color:$primary-color;
+            }
+        }
+    }
+}
+
+.feature_card{
+    background: $bg-color;
+    border: 1px solid #E0E0E0;
+    padding: 22px 16px;
+
+    h4{
+        font-weight: 700;
+        font-size: .88rem;
+        line-height: 1.5em;   
+        color: $primary-color;
+        margin-left: 1rem;
+    }
+
+    p{
+        font-size: 0.625rem;
+    line-height: 1rem;
+    color: $text-color;
+    }
+
+}
+
+.featured-plants{
+    margin-top: 4.5rem;
+
+    &__header{
+        padding-bottom: 16px;
+        border-bottom: 1px solid #E0E0E0;
+        margin-bottom: 1.3rem;
+
+        h3{
+            font-size: 20px;
+        }
+
+        .dropdown{
+            border: 1px solid #E0E0E0;
+    
+            &__btn{
+                font-size: 12px;
+                padding: 8px 1em;
+            }
+    
+            .fa-chevron-down{
+                margin-left: 1em;
+            }
+    
+        }
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        width: 215px;     
+
+  
+}
+
+

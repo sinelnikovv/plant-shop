@@ -6,77 +6,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="splidejs/dist/css/splide.min.css">
     <link rel="stylesheet" href="main.css">
-    <title>Plant shop</title>
+    <title>Plant Shop</title>
   </head>
   <body>
+    <nav class="navbar  navbar-expand-lg p-0">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Plant Shop"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars "></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-md-inline-flex align-items-center ">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass fa-lg btn__icon"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-lg btn__icon"></i></a>
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn__padding btn__text btn__hover" data-bs-toggle="modal" data-bs-target="#sign-up">
+                Sign Up
+              </button>
 
-  <header>
 
-    <nav class="  d-flex justify-content-between container">
-      <a class="z" href="index.html"><img src="img/logo.png" alt=""></a>
-      <div class="menu d-flex">
-        <ul class="d-flex icons justify-content-between align-items-center me-2">
-          <li><a href=""><img src="img/search.svg" alt=""></a></li>
-          <li><a href=""><img src="img/cart.svg" alt=""></a></li>
-        </ul>
-        <ul class="d-flex">
-          <li class="sign-up"><a  href="">Sign Up</a></li>
-          <li class="sign-in"><a  href="">Sign In</a></li>
-        </ul>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn__padding btn__bg btn__hover" data-bs-toggle="modal" data-bs-target="#sign-in">
+                Sign In
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-
-    <main>
-      <div class="container">
-      
-
+<header>
+  
+      <div class="container p-0">
+  
+  
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active  ">
-              <div class="d-flex justify-content-between">
-                <div class="header-left"><img src="img/kembang.jpg" alt=""></div>
-                <div class="header-right">
+            <div class="carousel-item active">
+  
+                <div class="row flex-column flex-md-row align-items-center justify-content-md-between">
+                  <div class="header-left col-sm-12 col-md-6">
+                    <img class="w-100" src="img/kembang.jpg" alt="">
+                  </div>
+                  <div class="header-right col-sm-12 col-md-6 mt-5 text-center text-md-start">
+                    <h2>Kembang Flower Mantap</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                  </div>
+                </div>
+  
+            </div>
+
+            <div class="carousel-item">
+  
+              <div class="row flex-column flex-md-row align-items-center justify-content-md-between">
+                <div class="header-left col-sm-12 col-md-6">
+                  <img class="w-100" src="img/kembang.jpg" alt="">
+                </div>
+                <div class="header-right col-sm-12 col-md-6 mt-5 text-center text-md-start">
                   <h2>Kembang Flower Mantap</h2>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="d-flex justify-content-between">
-              <div class="header-left"><img src="img/kembang.jpg" alt=""></div>
-              <div class="header-right">
-                <h2>Kembang Flower Mantap</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-              </div>
-            </div>
-            </div>
+
+          </div>
             
           </div>
+            <div class="carousel_buttons d-flex text-center ">
+              <button class="button_carousel button_carousel_prev text-start w-100 flex-column align-items-center align-items-lg-start btn__hover" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+  
+                <div class="opacity-50"><img  src="img/arrow-left.svg" alt="">Previous</div>
+                <p class="button-carousel-left">Kaktus Plant</p>
+  
+              </button>
+              
+              <button class="button_carousel button_carousel_next text-start w-100 flex-column align-items-center align-items-lg-start btn__hover" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+  
+                <div class="opacity-50">Next<img class="d-inline" src="img/arrow-right.svg" alt=""></div>
+                <p class="d-inline button-carousel-left">Kaktus Plant</p>
+  
+              </button>
+            </div>
+  
           
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Следующий</span>
-                </button>
+  
+  
         </div>
-
-
+  
+  
       </div>
-    </main>
-    
-
 </header>
 
+<main>
+
+  <div class="container">
+
+    <section>
+      <div class="row features">
+        <div class="col-10 col-md-6 col-xxl-3">
+          <div class="feature_card d-flex flex-column align-items-center align-items-md-start">
+            <div class="d-flex feature_card_heading text-center text-md-start">
+              <img  src="img/fast 1.svg" alt="Fast delivery">
+              <h4>Fast <br>
+                Delivery</h4>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 col-xxl-3">
+          <div class="feature_card d-flex flex-column align-items-center align-items-md-start">
+            <div class="d-flex feature_card_heading text-center text-md-start">
+              <img  src="img/headphones 1.svg" alt="Great Customer Service">
+              <h4>Great Customer <br> Service</h4>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 col-xxl-3">
+          <div class="feature_card d-flex flex-column align-items-center align-items-md-start">
+            <div class="d-flex feature_card_heading text-center text-md-start">
+              <img  src="img/plant 1.svg" alt="Original Plants">
+              <h4>Original <br> Plants</h4>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 col-xxl-3">
+          <div class="feature_card d-flex flex-column align-items-center align-items-md-start">
+            <div class="d-flex feature_card_heading text-center text-md-start">
+              <img  src="img/dollar-symbol 1.svg" alt="Affordable Price">
+              <h4>Affordable <br> Price</h4>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-plants">
+
+      <div class="featured-plants__header d-flex justify-content-between">
+        <h3>Featured Plants</h3>
+        <div class="dropdown">
+          <button class="btn dropdown__btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            Cheaper First
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><button class="dropdown-item" type="button">Cheaper First</button></li>
+            <li><button class="dropdown-item" type="button">New First</button></li>
+            <li><button class="dropdown-item" type="button">Popular First</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+
+            <li class="splide__slide">
+                <div class="card">
+                  <img src="img/kaktus.png" alt="Kaktus Plants">
+                  
+                    <p>Kaktus Plants</p>
+                    <p>IDR 85.000</p>
+                  
+                </div>
+              
+               
+              
+            
+            </li>
+            <!-- <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+            <li class="splide__slide">Slide 03</li>
+            <li class="splide__slide">Slide 03</li> -->
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    
+
+  </div>
+</main>
+
+
+    <!-- Modal sign-up-->
+<div class="modal fade" id="sign-up" tabindex="-1" aria-labelledby="sign-up-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content m-sm-1">
+            <div class="modal-body p-0">
+              <button type="button" class="btnClose btn p-0" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M8.15411 7L13.9578 0.281288C14.0551 0.169632 13.9733 0 13.8229 0H12.0586C11.9547 0 11.8552 0.045092 11.7867 0.122393L7 5.66442L2.21332 0.122393C2.147 0.045092 2.0475 0 1.94138 0H0.177052C0.0267085 0 -0.0550963 0.169632 0.0421849 0.281288L5.84589 7L0.0421849 13.7187C0.020393 13.7436 0.00641268 13.774 0.00190318 13.8064C-0.00260632 13.8388 0.00254441 13.8717 0.0167444 13.9014C0.0309444 13.931 0.0535972 13.956 0.0820128 13.9735C0.110428 13.991 0.143414 14.0002 0.177052 14H1.94138C2.04529 14 2.14479 13.9549 2.21332 13.8776L7 8.33558L11.7867 13.8776C11.853 13.9549 11.9525 14 12.0586 14H13.8229C13.9733 14 14.0551 13.8304 13.9578 13.7187L8.15411 7Z" fill="#156963"/>
+                </svg>
+              </button>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-5 d-none d-md-block modal-image">
+                  </div>
+                  <div class="col-12 col-md-7 modal-pattern d-flex flex-column align-items-center justify-content-center">
+                    <h3 class="modal_header">Sign up</h3>
+                    <form class="modal_form text-center" action="index.html" method="post">
+                      <div class="form-floating mb-4">
+                        <input type="email" name="" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                      </div>
+                      <div class="form-floating mb-4">
+                        <input type="password" name="" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div class="form-floating mb-4">
+                        <input type="password" name="" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Confirm Password</label>
+                      </div>
+                      <button type="submit" class="btn btn__padding btn__bg btn__hover w-100">Sign Up</button>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal sign-in-->
+<div class="modal fade" id="sign-in" tabindex="-1" aria-labelledby="sign-in-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content m-sm-1">
+            <div class="modal-body p-0">
+              <button type="button" class="btnClose btn p-0" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M8.15411 7L13.9578 0.281288C14.0551 0.169632 13.9733 0 13.8229 0H12.0586C11.9547 0 11.8552 0.045092 11.7867 0.122393L7 5.66442L2.21332 0.122393C2.147 0.045092 2.0475 0 1.94138 0H0.177052C0.0267085 0 -0.0550963 0.169632 0.0421849 0.281288L5.84589 7L0.0421849 13.7187C0.020393 13.7436 0.00641268 13.774 0.00190318 13.8064C-0.00260632 13.8388 0.00254441 13.8717 0.0167444 13.9014C0.0309444 13.931 0.0535972 13.956 0.0820128 13.9735C0.110428 13.991 0.143414 14.0002 0.177052 14H1.94138C2.04529 14 2.14479 13.9549 2.21332 13.8776L7 8.33558L11.7867 13.8776C11.853 13.9549 11.9525 14 12.0586 14H13.8229C13.9733 14 14.0551 13.8304 13.9578 13.7187L8.15411 7Z" fill="#156963"/>
+                </svg></button>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-5 d-none d-md-block modal-image">
+           </div>
+          <div class="col-12 col-md-7 modal-pattern d-flex flex-column align-items-center justify-content-center">
+            <h3 class="modal_header">Sign in</h3>
+              <form class="modal_form text-center" action="index.html" method="post">
+                <div class="form-floating mb-4">
+                  <input type="email" name="" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input type="password" name="" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button type="submit" class="btn btn__padding btn__bg btn__hover w-100">Sign In</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <script src="https://kit.fontawesome.com/2fa14e3763.js" crossorigin="anonymous"></script>
+    <script src="splidejs/dist/js/splide.min.js"></script>
+    <script src="carousel.js"></script>
+    
+  </body>
 </html>
-
-
-
