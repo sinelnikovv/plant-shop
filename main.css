@@ -52,6 +52,8 @@ html {
 .btn__hover:hover {
   background: #0D403C;
   color: #fff;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .fa-bars {
@@ -260,6 +262,20 @@ header .header-right h2 {
   background: #fff;
   border: 1px solid #E0E0E0;
   padding: 22px 16px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 577px) {
+  .feature_card {
+    max-width: 350px;
+    margin: 0 auto 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature_card {
+    margin-bottom: 0;
+  }
 }
 
 .feature_card h4 {
@@ -277,7 +293,7 @@ header .header-right h2 {
 }
 
 .featured-plants {
-  margin-top: 4.5rem;
+  margin: 4.5rem 0;
 }
 
 .featured-plants__header {
@@ -315,13 +331,146 @@ header .header-right h2 {
       -ms-flex-align: center;
           align-items: center;
   width: 215px;
-}
-
-.featured-plants .splide__slide p:first-child {
   font-size: 16px;
 }
 
-.featured-plants .splide__slide p:nth-child(2) {
+.featured-plants .splide__slide p:first-of-type {
+  margin: 1em 0 .5em;
+}
+
+.featured-plants .splide__slide p:last-child {
   font-weight: 600;
+  margin-bottom: 0;
+}
+
+.offer {
+  color: #2C1500;
+  margin: 4.5rem 0;
+  font-size: 16px;
+}
+
+.offer .text_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer .text_block h3 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.offer .text_block p {
+  line-height: 1.75rem;
+  opacity: 0.8;
+}
+
+.offer .text_block img {
+  justify-self: flex-end;
+}
+
+.offer .img_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.visit {
+  background: #F3F4F6;
+  margin-bottom: 80px;
+}
+
+.visit .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visit .row .visit_text h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  color: #2C1500;
+  margin-bottom: 32px;
+}
+
+.visit .row .visit_text .btn {
+  padding: 10px 42px;
+}
+
+.hr {
+  width: 100vw;
+  max-width: 1280px;
+  margin: auto;
+  height: 1px;
+  border-bottom: 1px solid #156963;
+  opacity: 0.3;
+}
+
+footer {
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+footer .footer__section a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .footer__section h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+footer .footer__section h4 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 1em;
+}
+
+footer .footer__section h4 a {
+  text-transform: uppercase;
+  color: #156963;
+}
+
+footer .footer__section p {
+  color: #4F4F4F;
+}
+
+footer .footer__section__1 h5 {
+  margin-bottom: 10px;
+}
+
+footer .footer__section__2 h5, footer .footer__section__3 h5 {
+  margin-bottom: 20px;
+}
+
+footer .footer__section__2 a, footer .footer__section__3 a {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 1140px) {
+  footer .footer__section__4 {
+    margin-left: 30px;
+  }
+}
+
+footer .footer__section__4 form input[type=email] {
+  margin: 14px 0px;
+}
+
+footer .footer__section__4 form .btn {
+  border-radius: 2px;
+  padding: 4px 12px;
 }
 /*# sourceMappingURL=main.css.map */
