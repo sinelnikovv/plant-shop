@@ -302,7 +302,12 @@ header{
 
         .dropdown{
             border: 1px solid #E0E0E0;
-    
+            &-menu.nav{
+                display: none;
+                &.show{
+                    display: block;
+                }
+            }
             &__btn{
                 font-size: 12px;
                 padding: 8px 1em;

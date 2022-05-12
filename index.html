@@ -160,47 +160,126 @@
             Cheaper First
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><button class="dropdown-item" type="button">Cheaper First</button></li>
-            <li><button class="dropdown-item" type="button">New First</button></li>
-            <li><button class="dropdown-item" type="button">Popular First</button></li>
+          <ul class="nav dropdown-menu nav-pills" id="myTab" aria-labelledby="dropdownMenu2" role="tablist">
+            <li><button class="dropdown-item active" type="button" role="tab" data-bs-toggle="pill" id="cheaper-tab" data-bs-target="#cheaper" aria-controls="cheaper"  aria-selected="true">Cheaper First</button></li>
+            <li><button class="dropdown-item" type="button" role="tab" data-bs-toggle="pill" id="newest-tab" data-bs-target="#newest" aria-controls="newest" aria-selected="false">New First</button></li>
+            <li><button class="dropdown-item" type="button" role="tab" data-bs-toggle="pill" id="popular-tab" data-bs-target="#popular" aria-controls="popular" aria-selected="false" >Popular First</button></li>
           </ul>
         </div>
       </div>
 
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list active">
+      
 
-            <li class="splide__slide">
-                <img src="img/kaktus.png" alt="Kaktus Plants">
-                <p>Kaktus Plants</p>
-                <p>IDR 85.000</p>                     
-            </li>
-            <li class="splide__slide">
-              <img src="img/landak.png" alt="Kaktus Plants">
-              <p>Landak Plants</p>
-              <p>IDR 105.000</p>                     
-            </li>
-            <li class="splide__slide">
-              <img src="img/kecubung1.png" alt="Kaktus Plants">
-              <p>Kecubung Plants</p>
-              <p>IDR 80.000</p>                     
-            </li>
-            <li class="splide__slide">
-              <img src="img/kecubung2.png" alt="Kaktus Plants">
-              <p>Kecubung Plants</p>
-              <p>IDR 90.000</p>                     
-            </li>
-            <li class="splide__slide">
-              <img src="img/kecubung3.png" alt="Kaktus Plants">
-              <p>Kecubung Plants</p>
-              <p>IDR 95.000</p>                     
-            </li>
-          </ul>
-          
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane active show" id="cheaper" role="tabpanel" aria-labelledby="cheaper-tab">
+          <div class="splide" id="splide1">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="img/kaktus.png" alt="Kaktus Plants">
+                    <p>Kaktus Plants</p>
+                    <p>IDR 85.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/landak.png" alt="Kaktus Plants">
+                  <p>Landak Plants</p>
+                  <p>IDR 105.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung1.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 80.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung2.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 90.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung3.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 95.000</p>
+                </li>
+              </ul>
+        
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane" id="newest" role="tabpanel" aria-labelledby="newest-tab">
+          <div class="splide" id="splide2">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="img/kecubung2.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 90.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/landak.png" alt="Kaktus Plants">
+                  <p>Landak Plants</p>
+                  <p>IDR 105.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung1.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 80.000</p>
+                </li>
+        
+                <li class="splide__slide">
+                  <img src="img/kaktus.png" alt="Kaktus Plants">
+                  <p>Kaktus Plants</p>
+                  <p>IDR 85.000</p>
+              </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung3.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 95.000</p>
+                </li>
+              </ul>
+        
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-pane" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+          <div class="splide" id="splide3">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="img/kaktus.png" alt="Kaktus Plants">
+                    <p>Kaktus Plants</p>
+                    <p>IDR 85.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/landak.png" alt="Kaktus Plants">
+                  <p>Landak Plants</p>
+                  <p>IDR 105.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung3.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 95.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung1.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 80.000</p>
+                </li>
+                <li class="splide__slide">
+                  <img src="img/kecubung2.png" alt="Kaktus Plants">
+                  <p>Kecubung Plants</p>
+                  <p>IDR 90.000</p>
+                </li>
+        
+              </ul>
+        
+            </div>
+          </div>
         </div>
       </div>
+
 
     </section>
 

@@ -310,6 +310,14 @@ header .header-right h2 {
   border: 1px solid #E0E0E0;
 }
 
+.featured-plants__header .dropdown-menu.nav {
+  display: none;
+}
+
+.featured-plants__header .dropdown-menu.nav.show {
+  display: block;
+}
+
 .featured-plants__header .dropdown__btn {
   font-size: 12px;
   padding: 8px 1em;
